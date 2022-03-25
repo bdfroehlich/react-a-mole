@@ -1,8 +1,16 @@
 import { useState } from 'react'
 import MoleContainer from './moleContainer'
+import './App.css';
 
 function App(){
     let [score, setScore] = useState(0)
+
+    const container = {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between',
+     }
 
     const createMoleHill = () => {
         let hills = []
@@ -16,14 +24,14 @@ function App(){
         }
     
         return (
-            <div>
+            <div style={container}>
                 {hills}
             </div>
         )
     }
 
     return (
-        <div className="App">
+        <div style={{ textAlign: 'center'}}>
             <h1>React-a-Mole!</h1>
             {score}
             {createMoleHill()}

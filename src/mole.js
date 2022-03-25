@@ -1,10 +1,9 @@
 import {useEffect} from 'react'
-import moleImg from './assets/mole'
+import moleImg from './mole.png'
 
 function Mole(props){
+
     useEffect(() => {
-        // Feel free to adjust this number as you see fit.
-        // It is your game to tune!
         let randSeconds = Math.ceil(Math.random() * 10000)
         let timer = setTimeout(() => {
             props.setDisplayMole(false)
@@ -13,12 +12,12 @@ function Mole(props){
     })
 
     return (
-        <div>
-            <img style={{'width': '30vw'}}
-            src={moleImg}
-            onClick={props.handleClick}
-            alt="mole" />
-        </div>
+            <div>
+                <img style={{'width': '10vw'}}
+                src={moleImg}
+                onClick={props.handleClick}
+                alt="mole" />
+            </div>
     )
 }
 
