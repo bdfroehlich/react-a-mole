@@ -1,10 +1,11 @@
 import { useEffect } from "react"
-import moleHill from './moleHill.png'
+import moleHill from '../moleHill.png'
 
 function EmptySlot(props){
 
     useEffect(() => {
-        let randSeconds = Math.ceil(Math.random() * 10000)
+        // console.log("empty slot useEffect ran")
+        let randSeconds = Math.ceil(Math.random() * 30000)
         let timer = setTimeout(() => {
             props.displayTheMole(true)
         }, randSeconds)
@@ -13,10 +14,10 @@ function EmptySlot(props){
 
     return (
         <div>
-            <img style={{'width': '10vw'}}
+            <img style={{'width': '30vw'}}
              src={moleHill}
              onClick={props.handleBadClick}
-             alt="mole hill"
+             alt="Picture of empty mole hill."
               />
             
         </div>

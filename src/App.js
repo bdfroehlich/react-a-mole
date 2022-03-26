@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import MoleContainer from './moleContainer'
+import MoleContainer from './components/moleContainer';
 import './App.css';
 
 function App(){
@@ -14,7 +14,7 @@ function App(){
 
     const createMoleHill = () => {
         let hills = []
-        for (let i = 0; i < 36; i++) {
+        for (let i = 0; i < 9; i++) {
             hills.push(
                 <MoleContainer
                 key={i}
