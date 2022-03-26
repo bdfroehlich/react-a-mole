@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+body {
+  background-color: rgb(108, 76, 34);
+}
+
+#score {
+  color:rgb(175, 200, 208);
+  font-size: 2vw;
+}
+
+#title {
+  color: rgb(175, 200, 208);
+  font-size: 2vw;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;

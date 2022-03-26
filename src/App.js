@@ -32,8 +32,8 @@ function App(){
 
     return (
         <div style={{ textAlign: 'center'}}>
-            <h1>React-a-Mole!</h1>
-            {score}
+            <h1 id="title">React-a-Mole!</h1>
+            <h2 id="score">{score}</h2>
             {createMoleHill()}
         </div>
     )
