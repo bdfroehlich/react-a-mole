@@ -17,7 +17,7 @@ function EmptySlot(props){
             <img style={{'width': '30vw'}}
              src={molehill}
              onClick={props.handleBadClick}
-             alt="Picture of empty mole hill."
+             alt="empty mole hill"
               />
             
         </div>
