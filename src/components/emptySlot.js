@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import moleHill from '../moleHill.png'
+import molehill from '../molehill.png'
 
 function EmptySlot(props){
 
@@ -15,7 +15,7 @@ function EmptySlot(props){
     return (
         <div>
             <img style={{'width': '30vw'}}
-             src={moleHill}
+             src={molehill}
              onClick={props.handleBadClick}
              alt="Picture of empty mole hill."
               />
